@@ -1,6 +1,7 @@
 name = input("this is me :")
 
 print("my name is" , name)
+print("my friend is" , name)
 
 num1 = int("5")
 num2 = int("8")
