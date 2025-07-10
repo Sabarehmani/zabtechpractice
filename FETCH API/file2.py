@@ -1,10 +1,9 @@
 import requests
 response = requests.get("https://randomuser.me/api/")
 data = response.json()
-result = data["results"]
-name = result["0"]
+print(data)
 
+print(data["results"][0]["gender"])
+print(data["results"][0]["name"]["first"])
+print(data["results"][0]["name"]["last"])
 
-for s in data:
-    # print(result[0]["gender"])
-    print(name["name"]["first"])
