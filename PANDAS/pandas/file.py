@@ -13,6 +13,6 @@ print(arr2)
 
 import pandas as pd
 data = {
-    "name" : ["usman" , "adnan" , "saba" , "kamran"]
+    "name" : ["usman" , "adnan" , "saba" , "kamran"],
     "age" : [27,25,23,20]
 }
