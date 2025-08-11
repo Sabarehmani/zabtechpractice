@@ -20,3 +20,13 @@ print(df.info())
 print("/n missing values:")
 print(df.isnull().sum())
 
+#step 5:Fill missing values 
+df['marks'] = df['marks'].fillna(df['marks'].mean())
+df['grade'] = df['grade'].fillna('B')
+
+#step 6: Add a new column : "status"
+df['status'] = ['pass' if m >= 75 else 'fail' for m in df['marks']]
+
+# step 7: Show cleaned and updated data
+print("/n cleaned and updated data:")
+print(df)
