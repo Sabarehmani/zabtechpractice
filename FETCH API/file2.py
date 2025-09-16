@@ -8,3 +8,4 @@ print(data["results"][0]["name"]["first"])
 print(data["results"][0]["name"]["last"])
 
 
+    
